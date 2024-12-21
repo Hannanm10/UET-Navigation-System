@@ -1,13 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My WinForms App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UET Campus Navigation System</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light grey background */
+            color: #333; /* Dark grey text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #388e3c; /* Green */
+            padding: 15px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1; /* Ensures it takes up available space */
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            color: #388e3c; /* Green */
+            text-align: center;
+        }
+
+        .main-content p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+       /* Image Section */
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px; /* Increased gap between image boxes */
+    margin: 20px 0;
+}
+
+.image-section div {
+    flex: 1;
+    height: 200px; /* Set height */
+    background-color: #e0e0e0; /* Placeholder grey */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 1.2em;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure images don't overflow the div */
+}
+
+.image-section img {
+    max-width: 100%; /* Image will not exceed the width of the container */
+    max-height: 100%; /* Image will not exceed the height of the container */
+    object-fit: cover; /* Ensure the image covers the container area without distortion */
+}
+
+        /* Team section */
+        .team-section {
+            margin-top: 30px;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #a5d6a7; /* Light green */
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            margin: 0;
+            color: #2e7d32; /* Dark green */
+        }
+
+        .team-member p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .team-member a {
+            color: #2e7d32; /* Dark green */
+            text-decoration: none;
+        }
+
+        .team-member a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #388e3c; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer h2 {
+            margin-top: 0;
+        }
+
+        .footer p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .button {
+            text-decoration: none;
+            background-color: #4caf50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            background-color: #388e3c; /* Darker green */
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column;
+            }
+
+            .image-section div {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My WinForms App</h1>
-    <p>Click below to download the app:</p>
-    <a href="https://github.com/Hannanm10/UET-Navigation-System/archive/refs/heads/main.zip" download>
-        <button>Download Now</button>
-    </a>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>UET Campus Navigation System</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to UET Campus Navigation System</h1>
+        <p>The Campus Navigation System simplifies navigation within a university by providing an interactive tool to select current locations and destinations, displaying optimal routes on a map. It also logs route history with timestamps for user convenience and administrative insights, enhancing campus accessibility and efficiency.</p>
+
+        <!-- Image Section -->
+       <!-- Image Section -->
+<div class="image-section">
+    <div>
+        <img src="1.jpg">
+    </div>
+    <div>
+        <img src="2.jpg">
+    </div>
+    <div>
+        <img src="3.jpg">
+    </div>
+</div>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <a href="https://github.com/Hannanm10/UET-Navigation-System/archive/refs/heads/main.zip" class="button" download>Download</a>
+            <a href="https://github.com/Hannanm10/Campus-Navigation-System.git" class="button" target="_blank">View Source Code</a>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <h2>Meet the Team</h2>
+
+            <div class="team-member">
+                <h3>Muhammad Ahmad - Team Lead</h3>
+                <p>Muhammad Ahmad is the team lead responsible for overseeing the project and ensuring all modules are seamlessly integrated.</p>
+                <a href="hhttps://www.linkedin.com/in/muhammad-ahmad-5217702a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+            </div>
+
+            <div class="team-member">
+                <h3>Hannan Mushtaq - Backend Developer</h3>
+                <p>Hannan Mushtaq specializes in backend development, ensuring robust and efficient server-side functionalities.</p>
+                <a href="https://www.linkedin.com/in/hannan-mushtaq-8341222a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+            </div>
+
+            <div class="team-member">
+                <h3>Furqan Asif - Frontend Developer</h3>
+                <p>Furqan Asif is the frontend developer, crafting a user-friendly and visually appealing interface for the system.</p>
+                <a href="https://www.linkedin.com/in/furqan-asif-9438252a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>About the Project</h2>
+        <p>The Campus Navigation System enhances user experience by providing efficient route planning and maintaining a detailed route history, ensuring better campus navigation and accessibility.</p>
+        <p>The proposed solution uses a user-friendly interface to provide real-time route guidance, log travel history by capturing selected destinations and timestamps, and enable efficient navigation across campus locations.</p>
+    </div>
 </body>
 </html>
